@@ -1,0 +1,662 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight: 500;
+  line-height:0.9cm;
+}
+
+/*navbar*/
+
+.navbar {
+  position:relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(2, 56, 30) 70%, rgb(0,191,255) 30%);
+  box-sizing: border-box;
+  height: 150px;
+  border-radius: 0 0 25px 25px;
+}
+
+.logo-img {
+  width: 180px; 
+  height: 100px; 
+  margin-right: 10px; 
+  border-radius: 15px;
+  padding-right: 160px;
+  
+}
+
+.container {
+  width: 90%;
+  margin-left: 10px;
+}
+
+nav h1{
+ display: inline;
+  font-weight: 700;
+  line-height: 1cm ;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px ;
+  color:#96fe46;
+
+}
+
+nav ul {
+  display: inline;
+  list-style: none;
+  margin-top: 0;
+  margin-left: 650px;
+  padding-bottom: 20px;
+  
+  
+}
+
+nav ul li {
+  display: inline;
+  margin-right:15px;
+  font-size: larger;
+  padding-bottom: 30px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li:not(:last-child) a::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 30px; 
+  background-color: white;
+  margin: 0 20px; 
+  
+}
+
+/*showcase styling*/
+
+.showcase {
+  position: relative;
+   padding: 5cqmax 0;
+   text-align: center;
+   background: url('images/biogas.jpg') no-repeat center center fixed;
+   background-color:transparent;
+   background-size: cover;
+  
+ }
+ 
+ .showcase-text {
+   text-align: center;
+   background-color:transparent;
+   padding: 20px 0px;
+   color: white;
+   margin: auto;
+   line-height: 1cm;
+   font-size: larger;
+   
+ }
+ 
+ .showcase-text h1 {
+   margin-top: 0;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 900;
+   line-height: 1.2cm;
+   font-size: larger larger larger;
+   color:white;
+ }
+ 
+
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(0 ,191, 255);
+  color: black;
+}
+
+
+
+/*vision and mission*/
+
+.VisionMission {
+  padding: 20px;
+}
+
+.VisionMission h1{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 50px;
+color: darkgreen;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-gap: 5px;
+  margin: 0.1px;
+  margin-bottom: 60px;
+  
+}
+
+.card {
+  background-color: white;
+  color: rgb(52, 50, 50);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  height: 250px;
+  width: 500px;
+  margin: 20px; 
+}
+
+.VisionMission .container .card{
+  margin-bottom: 40px;
+}
+
+.VisionMission .container .card:last-child{
+  margin-bottom: 0;
+}
+
+.VisionMission .container .card h2 {
+  margin: 10px;
+  color: darkgreen;
+  font-size: 40px;
+}
+.VisionMission .container .card p {
+  margin: 10px; 
+  font-size: 20px;
+}
+
+.VisionMission .container img {
+  max-width:400px; 
+  max-height:900px ;
+  border-radius: 15px; 
+  margin: 20px;
+  margin-left: 30px;
+}
+
+
+
+/* Footer styling */
+.footer {
+  background-color: rgb(2, 56, 30);
+  color: white;
+  padding: 20px;
+}
+
+.footer .grid {
+  display: flex;
+  justify-content:space-between;
+  align-items:center ;
+  
+}
+
+.footer .grid h1{
+color: #96fe46;
+font-size: 40px;
+font-family: 'Times New Roman', Times, serif;
+margin: 0;
+}
+
+.footer .grid img{
+  width: 180px; 
+  height: 100px; 
+}
+.footer .grid p {
+  margin: o;
+}
+
+.footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.find {
+ 
+  text-align: center;
+ 
+}
+
+
+
+/*about.html*/
+
+.grid{
+  margin-left: 30px;
+  padding: 20px;
+  margin-right: 0px;
+
+}
+.grid h1{
+  margin-left: 30px;
+  font-size: 30px;
+  color:darkgreen;
+}
+.about .grid p{
+  font-size:20px;  
+  padding: 10px;
+  margin: 20px; 
+}
+.about-main h2{
+  
+  font-size: 30px;
+  color: darkgreen;
+  margin-left: 60px;
+}
+.grid h2{
+  font-size: 20px;
+}
+
+
+.about .container img {
+  max-width:500px; /* Adjust the maximum width as needed */
+  max-height:1000px ;
+  border-radius: 20px;
+  margin-top: 150px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5) ;
+    
+}
+
+
+/*cloud*/
+
+.bg-primary{
+ background-color:lightgray;
+ text-align: center;
+ height: 8cm;
+ margin-bottom: 5cm;
+ padding: 10px;
+  
+}
+.bg-primary a{
+color: black;
+font-size: larger;
+}
+.cloud .text-center h2{
+  font-weight: 700;
+  font-size: 50px;
+  color: darkgreen;
+}
+
+.cloud .text-center p{
+color: black;
+font-size: larger;
+}
+
+.cloud img{
+  max-width: 900px;
+  max-height: 250px;
+  border-radius: 15px;
+}
+.cloud .grid {
+  grid-template-columns:4fr 2fr;}
+
+
+/*contact.html*/
+
+.forms-form {
+  justify-self: center;
+  margin-right: 50px;
+  margin-left: 200px;
+  width: 700px;
+  height: 300px;
+}
+
+.forms-form input[type="text"],
+.forms-form input[type="email"],
+.forms-form textarea {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+.forms-form textarea {
+  height: 90px; 
+}
+
+.btn-primary{
+  display: inline block; 
+  padding: 10px 30px;
+  background-color: darkgreen;
+  cursor:pointer ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/*responsiveness*/
+
+
+/*tablets and under*/
+@media (max-width: 768px) {
+ .navbar {
+    margin-top: 30px;
+    height: auto;
+    text-align: center;
+  }
+  nav ul li {
+    display:block;
+    margin:0;  
+    font-size: 25px;
+    text-align: center;
+  }
+  .navbar ul li:not(:last-child) a::after {
+    content: none;
+  } 
+  .showcase-text h1 {
+    font-size: 24px; 
+    line-height: 30px; 
+  }
+
+
+
+   /*VisionMission*/
+  .VisionMission {
+    padding: 10px;
+  }
+  .VisionMission h1{
+  text-align: center;
+  font-size: 30px;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 5px;
+    margin: 0.1px;
+    margin-bottom: 60px; 
+  }
+  .card {
+   width: 90%;
+   margin: auto;
+  }
+  .VisionMission .container .card{
+    margin-bottom:50px;
+  }
+  .VisionMission .container .card:last-child{
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 420px;
+  }
+  .VisionMission .card h2 {
+    margin: 5px;
+    font-size: 30px;
+  }
+  .VisionMission .container .card p {
+    margin:0; 
+    font-size: 15px;  
+  }
+  .VisionMission .container img {
+    height:300px ;
+    width: 200px;
+  }
+  
+
+
+  /*about*/
+  .about .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+  .grid h1{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .about .grid p{
+    text-align: center;
+    font-size:large;
+    padding:0;
+    margin: 0; 
+  }
+  .about .container img {
+    max-width:300px; 
+    max-height:1000px ;
+    margin-top: 20px;   
+  }
+  .grid h2{
+    font-weight: 10px;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .about-main .grid p{
+    font-size: 15px;
+    margin: 10px;
+    padding: 0;
+}
+  .about-main .flex {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 420px;
+  } 
+  
+ 
+
+  .forms-form {
+    margin: 0;
+    width: 400px;
+    height: 400px;
+  }
+
+  /*cloud*/
+.bg-primary{
+  background-color:lightgray;
+  text-align: center;
+  height:10cm;
+  margin-bottom: 5cm;
+  padding: 5px;
+   
+ }
+ .bg-primary a{
+ color: black;
+ font-size: large;
+ }
+ .cloud .text-center h2{
+   font-weight: 700;
+   font-size: 30px;
+   color: darkgreen;
+ }
+ 
+ .cloud .text-center p{
+ color: black;
+ font-size: large;
+ }
+ .cloud img{
+   width: 200px;
+   max-height: 300px; 
+ }
+ .cloud .grid {
+   grid-template-columns:2fr 2fr;}
+
+
+   /*footer*/
+  .footer .grid {
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .footer nav ul {
+    margin-bottom: 20px; 
+  }
+ .footer nav ul li {
+    display: block; 
+    margin: 10px 0; 
+  }
+}
+
+  
+
+
+
+/*above tablets*/
+@media (min-width:768px) and (max-width:1200px){
+  .navbar {
+    top: 20px;
+    height: 250px; 
+  }
+  nav ul {
+    margin-inline-start: auto;
+
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right:15px;
+  }
+  nav h1{
+    text-align: center;
+  }
+  
+
+  /*vision and mission*/
+  
+  .VisionMission {
+    padding: 0;
+  }
+  
+  .VisionMission h1{
+  
+  font-size: 45px;
+  color: darkgreen;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0.1px;
+    margin-bottom: 60px;
+    
+  }
+  
+  .card {
+
+    padding: 5px;
+    height: 350px;
+    width: 300px;
+    margin: 20px; 
+  }
+  
+  .VisionMission .container .card h2 {
+    margin: 10px;
+    color: darkgreen;
+    font-size: 35px;
+  }
+  .VisionMission .container .card p {
+    margin: 10px; 
+    font-size: 20px;
+  }
+  
+  .VisionMission .container img {
+    max-width:300px; 
+   height:300px ;
+    border-radius: 15px; 
+    margin: 20px;
+    margin-left:0;
+  }
+  
+  
+  
+  /* Footer styling */
+  .footer {
+    background-color: rgb(2, 56, 30);
+    color: white;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  .footer nav ul li {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  
+  
+  /*about.html*/
+
+  .about .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+  
+  .grid{
+    margin: 10px;
+    padding: 10px;
+   
+  }
+  .about-main h2{
+    
+    font-size: 30px;
+    color: darkgreen;
+    margin-left: 40px;
+  }
+  .grid h2{
+    font-size: 20px;
+  }
+
+  .about-main p{
+    margin: 15px;
+  }
+  .about .container img {
+    width:500px; /* Adjust the maximum width as needed */
+    height: 300px;
+    margin-top: 0px;
+   
+  }
+  
+  
+  
+  /*contact.html*/
+  
+  .forms-form {
+    justify-self: center;
+    margin: 30px;
+   padding: 10px;
+    width: 500px;
+    
+  }
+  
+  .forms-form textarea {
+    height: 90px; 
+  }
+  
+}
+
+
+
