@@ -9,25 +9,24 @@ body {
   line-height:0.9cm;
 }
 
+
 /*navbar*/
 
 .navbar {
-  position:relative;
-  top: 0;
-  right: 0;
+  position:relative ;
   width: 100%;
   background: linear-gradient(to bottom, rgb(2, 56, 30) 70%, rgb(0,191,255) 30%);
-  box-sizing: border-box;
-  height: 150px;
+  height: 210px;
   border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-img {
   width: 180px; 
   height: 100px; 
-  margin-right: 10px; 
-  border-radius: 15px;
-  padding-right: 160px;
   
 }
 
@@ -36,47 +35,51 @@ body {
   margin-left: 10px;
 }
 
-nav h1{
- display: inline;
+nav {
+  text-align: center;
+  
+}
+ nav h1{
+  margin: 0;
+  padding-bottom: 30px;
   font-weight: 700;
   line-height: 1cm ;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px ;
-  color:#96fe46;
-
+  font-size: 30px ;
+  color:#96fe46;  
 }
 
-nav ul {
-  display: inline;
+ nav ul {
   list-style: none;
-  margin-top: 0;
-  margin-left: 650px;
-  padding-bottom: 20px;
-  
-  
+  padding:0;
+  margin:10px;
+  display: flex; 
 }
 
 nav ul li {
-  display: inline;
-  margin-right:15px;
-  font-size: larger;
-  padding-bottom: 30px;
-
+  margin-right:50px;
+  font-size: 25px;
 }
+
+nav ul li:last-child{
+  margin-right: 0;
+}
+/* nav ul li:not(:last-child)::after {
+  content:'|';
+  display: inline block;
+  width: 1cm;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  background-color: white;
+  color: white;
+ 
+
+} */
 
 nav ul li a {
   text-decoration: none;
   color: white;
-}
-
-.navbar ul li:not(:last-child) a::after {
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 30px; 
-  background-color: white;
-  margin: 0 20px; 
-  
 }
 
 /*showcase styling*/
@@ -88,7 +91,7 @@ nav ul li a {
    background: url('images/biogas.jpg') no-repeat center center fixed;
    background-color:transparent;
    background-size: cover;
-  
+   background-attachment: local;
  }
  
  .showcase-text {
@@ -326,7 +329,7 @@ font-size: larger;
   margin-right: 50px;
   margin-left: 200px;
   width: 700px;
-  height: 300px;
+  height: 350px;
 }
 
 .forms-form input[type="text"],
@@ -361,63 +364,99 @@ font-size: larger;
 /*tablets and under*/
 @media (max-width: 768px) {
  .navbar {
-    margin-top: 30px;
+    margin: 0;
     height: auto;
     text-align: center;
   }
   nav ul li {
     display:block;
-    margin:0;  
-    font-size: 25px;
+    margin:0;
+    padding: 10px;  
+    font-size: 20px;
     text-align: center;
   }
-  .navbar ul li:not(:last-child) a::after {
-    content: none;
-  } 
+  nav h1{
+    font-size: 25px;
+    margin-left:0;
+    padding-bottom: 10px;
+  }
+
+
+  .container{
+   max-width:70%;
+  }
+
+  .showcase{
+    background-attachment:local;
+
+  }
+
   .showcase-text h1 {
-    font-size: 24px; 
+    font-size: 25px; 
     line-height: 30px; 
   }
+.showcase-text{
+  font-size: 18px;
+  margin-left:70px ;
+  padding: 0;
+}
 
 
 
    /*VisionMission*/
   .VisionMission {
-    padding: 10px;
+    padding:0px;
+   
   }
   .VisionMission h1{
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
+ 
   }
   .grid {
     display: grid;
-    grid-gap: 5px;
-    margin: 0.1px;
-    margin-bottom: 60px; 
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 50px;
+    margin-bottom: 40px; 
+    padding: 22px;
+   
   }
   .card {
-   width: 90%;
-   margin: auto;
+   width: 60%;
+   margin: 20px;
+  
   }
   .VisionMission .container .card{
-    margin-bottom:50px;
+    margin-bottom:20px;
+   margin-right: 10px;
+   height: 320px;
   }
   .VisionMission .container .card:last-child{
     margin-top: 20px;
     margin-bottom: 0;
-    height: 420px;
+    height: 450px;
+    
   }
+  
   .VisionMission .card h2 {
     margin: 5px;
-    font-size: 30px;
+    font-size: 25px;
   }
   .VisionMission .container .card p {
-    margin:0; 
+    margin:10; 
     font-size: 15px;  
   }
   .VisionMission .container img {
-    height:300px ;
-    width: 200px;
+    height:200px ;
+    width: 250px;
+    margin-left: 5px;
+  
+  }
+  
+  .VisionMission .container img {
+    margin-top: 0;
+  
   }
   
 
@@ -428,16 +467,19 @@ font-size: larger;
     flex-direction: column;
     align-items: center; 
     text-align: center;
+    margin-top: 0;
+    margin-left: 40px;
+
   }
   .grid h1{
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .about .grid p{
     text-align: center;
-    font-size:large;
+    font-size:15px;
     padding:0;
-    margin: 0; 
+    margin-left: 0; 
   }
   .about .container img {
     max-width:300px; 
@@ -456,62 +498,89 @@ font-size: larger;
     padding: 0;
 }
   .about-main .flex {
-    width: 80%;
+    width: 85%;
     margin: auto;
     margin-bottom: 20px;
-    height: 420px;
+    height: 300px;
   } 
   
  
 
   .forms-form {
-    margin: 0;
-    width: 400px;
+   margin-left: 0;
+   margin-top: 0;
+    width: 250px;
     height: 400px;
   }
+  
 
   /*cloud*/
 .bg-primary{
   background-color:lightgray;
   text-align: center;
-  height:10cm;
-  margin-bottom: 5cm;
-  padding: 5px;
-   
+  height:11cm;
+  margin-bottom: 100px;
+  padding: 0;
+  
  }
+ 
  .bg-primary a{
  color: black;
  font-size: large;
  }
  .cloud .text-center h2{
    font-weight: 700;
-   font-size: 30px;
+   font-size: 25px;
    color: darkgreen;
+   
  }
  
  .cloud .text-center p{
  color: black;
- font-size: large;
+ font-size: 15px;
  }
  .cloud img{
-   width: 200px;
-   max-height: 300px; 
+   width: 150px;
+   height: 200px;
  }
+
  .cloud .grid {
-   grid-template-columns:2fr 2fr;}
+   grid-template-columns:0.4fr 0.4fr;
+    padding-top: 35px;
+  
+  }
 
 
    /*footer*/
   .footer .grid {
     flex-direction: column; 
     text-align: center; 
+    padding: 10px;
+    margin-left: 40px;
+    
   }
   .footer nav ul {
     margin-bottom: 20px; 
+    
   }
  .footer nav ul li {
     display: block; 
     margin: 10px 0; 
+  }
+  .footer .grid h1{
+    font-size: 30px;
+  }
+  .footer nav ul li a{
+   font-size: 20px;
+  
+  }
+  .footer nav ul li {
+   padding: 10px;
+  
+  }
+  .footer .grid p {
+   padding: 0;
+  
   }
 }
 
@@ -522,22 +591,37 @@ font-size: larger;
 /*above tablets*/
 @media (min-width:768px) and (max-width:1200px){
   .navbar {
-    top: 20px;
+    top: 0;
     height: 250px; 
   }
   nav ul {
-    margin-inline-start: auto;
-
+    display: block;
+    padding-top: 30px;
+    margin-left: 10px;
+  
   }
   
   nav ul li {
     display: inline;
-    margin-right:15px;
+    margin-right:40px;
+    
+    
   }
   nav h1{
+    margin-left: 0;
+    font-size: 35px;
     text-align: center;
+    
   }
   
+
+
+  .showcase{
+    padding-left: 30px;
+  }
+  .showcase-text{
+    text-align: center;
+  }
 
   /*vision and mission*/
   
@@ -594,7 +678,10 @@ font-size: larger;
     color: white;
     padding: 20px;
   }
+  .footer nav ul li a {
   
+    font-size: 20px;
+  }
   
   
   
